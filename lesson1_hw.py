@@ -9,3 +9,6 @@ for i in range(len(num)):
 
 print(num_sum)
 print(num_mult)
+
+
+# 2.
