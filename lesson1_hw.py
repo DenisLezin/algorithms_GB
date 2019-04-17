@@ -1,5 +1,5 @@
 # 1. Найти сумму и произведение цифр трехзначного числа, которое вводит пользователь.
-'''
+
 num = input('Input the number: ')
 num_sum = 0
 num_mult = 1
@@ -69,7 +69,7 @@ chr1 = chr1 - ord('a') + 1
 chr2 = chr2 - ord('a') + 1
 print(f'place fo then first letter {chr1}; of the second - {chr2}')
 print(f'letters between of input letters - {abs(chr2 - chr1)- 1}')
-'''
+
 # 6. Пользователь вводит номер буквы в алфавите. Определить, какая это буква.
 
 letter = int(input('Input number of any letter (1 - 26): '))
