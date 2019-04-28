@@ -101,3 +101,21 @@ for i in range(1, len(lst)):
 
 print(f'max {lst[ind_max]}\nmin {lst[ind_min]}')
 print(f'sum = {sum(lst[min(ind_min, ind_max) + 1: max(ind_min, ind_max)])}')
+
+# 9. Найти максимальный элемент среди минимальных элементов столбцов матрицы.
+
+import random
+
+lst = [[random.randint(-10, 11) for _ in range(3)] for _ in range(3)]
+lst_t = list(zip(*lst))
+lst_min = [i[0] for i in lst_t]
+
+for line in range(len(lst_t)):
+    for i in lst_t[line][1:]:
+        if i < lst_min[line]:
+            lst_min[line] = i
+
+print(lst)
+print(lst_t)
+print(lst_min)
+print(f'max num from minimum of columns is {max(lst_min)}')
